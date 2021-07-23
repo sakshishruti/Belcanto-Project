@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELCANTO -italian Cuisine </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"></a><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">OUR PLACE</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">RESERVATIONS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>BELCANTO</h1>
+        <p>great italian servings</p>
+        <a href="" class="btn">Visit Us To Know More</a>
+    </div>    
+    </section>
+
+<!--------our place------------->
+
+<section class="place">
+    <h1>THE RESTAURANT</h1>
+    <p>What's for dinner? The city centre has all the inspiration you need when it<br>comes to the main meal of the day.  </p>
+    <div class="row">
+        <div class="place-col">
+            <h3>TRADITIONAL COURT MODERN TWIST</h3>
+            <br>
+            <p>Some of today’s best menu innovations come from a simple reframing of a familiar idea. The creativity behind dishes like chicken and waffles drives home that point, where chefs are retooling that classic to make it fit their concepts. Why bother? The answer is pretty clear to foodservice professionals: modern upgrades energize menus. The challenge is, as always, finding the flavor pathway that leads to the best dish</p>
+        </div>
+        <div class="place-col">
+            <h3>SERVING THE BEST QUALITY</h3> <br>
+            <p>A good restaurant sets a high standard for its food quality and ensures that guests receive the same quality with every meal.High-quality ingredients and an experienced cook are important to serving good food consistently. A good cook understands your guests' needs and works well with the kitchen staff to ensure that guests receive their meal the way they ordered it every time.</p>
+        </div>
+        <div class="place-col"> 
+            <h3>LOCATED IN THE HEART OF THE CITY</h3> <br>
+            <p>Lovely Italian cuisine and veg options to treat the pallate. This restaurant is at Shangri-La's Eros Hotel, New Delhi and definitely serves the finest food.</p>
+        </div>
+    </div>
+</section>
+
+
+<!---------------Contact------------->
+<section>
+    <!--<div class="alert-success">
+        <span>Message Sent! Thank you for reaching out to us.</span>
+    </div>
+
+    <div class="alert-error">
+        <span>Something went wrong! Please try again.</span>
+    </div>-->
+
+
+    <div class="cta">
+        <div class="ctinfo">
+            
+            <div><i class="fas fa-map-marker-alt"></i>500 Terry Francois St. San Francisco, CA 94158</div>
+            <div><i class="fas fa-envelope"></i>belcanto@gmail.com</div>
+            <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
+            <div><i class="fas fa-clock"></i>Monday to Friday 12pm-11pm  / Saturday to Sunday 12pm-1am</div>
+        </div>
+        <div class="ctform">
+            <h2>Contact Us</h2>
+            <form class="contact" action="index.html" method="post">
+                <input type="text" name="" class="textbox" placeholder="Your Name" required>
+                <input type="email" name="email" class="textbox" placeholder="Your Email" required>
+                <textarea name="message" class="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" name="submit" class="send-btn" value="send">
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--------------footer-------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatibus voluptatem dolorum <br>iure animi nostrum.</p>
+    <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+</section>
+
+<!-----------Javascript for Toggle Menu---------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }   
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+</body>
+</html>
